@@ -66,6 +66,49 @@
 			],
 			"problemMatcher": [],
 			"group": "none"
+		},
+		{
+			"label": "Git Merge Abort",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"merge",
+				"--abort"
+			],
+			"group": "none"
+		},
+		{
+			"label": "Git Log",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"log",
+				"--oneline",
+				"-5"
+			],
+			"group": "none"
+		},
+		{
+			"label": "Git Force Push",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"push",
+				"origin",
+				"main",
+				"--force-with-lease"
+			],
+			"group": "none"
+		},
+		{
+			"label": "Git Add Tasks",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				".vscode/tasks.json"
+			],
+			"group": "none"
 		}
 	]
 }
