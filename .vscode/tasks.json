@@ -1,0 +1,71 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Sincronizar Repositório Git",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"merge",
+				"origin/main",
+				"--no-edit"
+			],
+			"problemMatcher": [],
+			"group": "none"
+		},
+		{
+			"label": "Git Status",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status"
+			],
+			"problemMatcher": [],
+			"group": "none"
+		},
+		{
+			"label": "Commit Changes",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"commit",
+				"-m",
+				"Merge branch 'main' of https://github.com/luizcarvalho66/painel-preco-parceiro - Sincroniza commits remotos com adições de funções RLS e merge automático"
+			],
+			"problemMatcher": [],
+			"group": "none"
+		},
+		{
+			"label": "Git Add All",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"add",
+				"-A"
+			],
+			"problemMatcher": [],
+			"group": "none"
+		},
+		{
+			"label": "Git Commit Merge",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"commit",
+				"--no-edit"
+			],
+			"problemMatcher": [],
+			"group": "none"
+		},
+		{
+			"label": "Git Status Final",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status"
+			],
+			"problemMatcher": [],
+			"group": "none"
+		}
+	]
+}
